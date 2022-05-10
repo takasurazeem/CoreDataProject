@@ -14,6 +14,8 @@
 		F934E367282A92A20035B7A6 /* CoreDataProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934E366282A92A20035B7A6 /* CoreDataProjectTests.swift */; };
 		F934E371282A92A20035B7A6 /* CoreDataProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934E370282A92A20035B7A6 /* CoreDataProjectUITests.swift */; };
 		F934E373282A92A20035B7A6 /* CoreDataProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934E372282A92A20035B7A6 /* CoreDataProjectUITestsLaunchTests.swift */; };
+		F934E380282A92C40035B7A6 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934E37F282A92C40035B7A6 /* DataController.swift */; };
+		F934E383282A9FD20035B7A6 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F934E381282A9FD20035B7A6 /* CoreDataProject.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		F934E36C282A92A20035B7A6 /* CoreDataProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F934E370282A92A20035B7A6 /* CoreDataProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectUITests.swift; sourceTree = "<group>"; };
 		F934E372282A92A20035B7A6 /* CoreDataProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F934E37F282A92C40035B7A6 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		F934E382282A9FD20035B7A6 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				F934E357282A92A10035B7A6 /* ContentView.swift */,
 				F934E359282A92A20035B7A6 /* Assets.xcassets */,
 				F934E35B282A92A20035B7A6 /* Preview Content */,
+				F934E37F282A92C40035B7A6 /* DataController.swift */,
+				F934E381282A9FD20035B7A6 /* CoreDataProject.xcdatamodeld */,
 			);
 			path = CoreDataProject;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F934E358282A92A10035B7A6 /* ContentView.swift in Sources */,
+				F934E380282A92C40035B7A6 /* DataController.swift in Sources */,
+				F934E383282A9FD20035B7A6 /* CoreDataProject.xcdatamodeld in Sources */,
 				F934E356282A92A10035B7A6 /* CoreDataProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +585,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F934E381282A9FD20035B7A6 /* CoreDataProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F934E382282A9FD20035B7A6 /* CoreDataProject.xcdatamodel */,
+			);
+			currentVersion = F934E382282A9FD20035B7A6 /* CoreDataProject.xcdatamodel */;
+			path = CoreDataProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F934E34A282A92A10035B7A6 /* Project object */;
 }
