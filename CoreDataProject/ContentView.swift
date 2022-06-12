@@ -8,9 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var names: FetchedResults<Names>
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            List(names, id: \.self) { name in
+                Text(name.name ?? "Unknown")
+            }
+            
+            Button("Add") {
+                let name = Names(context: moc)
+                name.name = "Takasur Azeem"
+            }
+            
+            Button("Save") {
+                do {
+                    try moc.save()
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
     }
 }
 
