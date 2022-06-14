@@ -10,25 +10,40 @@ import SwiftUI
 struct ContentView: View {
     
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: []) var names: FetchedResults<Names>
+    @State private var firstNameFilter = "A"
     
     var body: some View {
         VStack {
-            List(names, id: \.self) { name in
-                Text(name.name ?? "Unknown")
+            FilteredList(filterKey: "firstName", filterValue: firstNameFilter) { (friend: Friend) in
+                Text("\(friend.wrappedFirstName) \(friend.wrappedlastName)")
             }
             
-            Button("Add") {
-                let name = Names(context: moc)
-                name.name = "Takasur Azeem"
+            Button("Add Friends") {
+                let friend1 = Friend(context: moc)
+                friend1.firstName = "Ahmed"
+                friend1.lastName = "Raza"
+                
+                let friend2 = Friend(context: moc)
+                friend2.firstName = "Ali"
+                friend2.lastName = "Ilyas"
+                
+                let friend3 = Friend(context: moc)
+                friend3.firstName = "Hammad"
+                friend3.lastName = "Afzal"
+                
+                let friend4 = Friend(context: moc)
+                friend4.firstName = "Hamza"
+                friend4.lastName = "Paa G"
+                
+                try? moc.save()
             }
             
-            Button("Save") {
-                do {
-                    try moc.save()
-                } catch {
-                    print(error.localizedDescription)
-                }
+            Button("Show A") {
+                firstNameFilter = "A"
+            }
+            
+            Button("Show H") {
+                firstNameFilter = "H"
             }
         }
     }

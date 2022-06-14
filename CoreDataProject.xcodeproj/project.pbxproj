@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		767CDEFA285509E700FA0CA1 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CDEF8285509E700FA0CA1 /* Movie+CoreDataClass.swift */; };
 		767CDEFB285509E700FA0CA1 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767CDEF9285509E700FA0CA1 /* Movie+CoreDataProperties.swift */; };
+		768C1DBA2859374500CE3D8E /* Friends+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C1DB82859374500CE3D8E /* Friends+CoreDataClass.swift */; };
+		768C1DBB2859374500CE3D8E /* Friends+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C1DB92859374500CE3D8E /* Friends+CoreDataProperties.swift */; };
+		768C1DBD285939A600CE3D8E /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C1DBC285939A600CE3D8E /* FilteredList.swift */; };
 		F934E356282A92A10035B7A6 /* CoreDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934E355282A92A10035B7A6 /* CoreDataProjectApp.swift */; };
 		F934E358282A92A10035B7A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934E357282A92A10035B7A6 /* ContentView.swift */; };
 		F934E35A282A92A20035B7A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F934E359282A92A20035B7A6 /* Assets.xcassets */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		767CDEF8285509E700FA0CA1 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
 		767CDEF9285509E700FA0CA1 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		768C1DB82859374500CE3D8E /* Friends+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friends+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		768C1DB92859374500CE3D8E /* Friends+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friends+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		768C1DBC285939A600CE3D8E /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
 		F934E352282A92A10035B7A6 /* CoreDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F934E355282A92A10035B7A6 /* CoreDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectApp.swift; sourceTree = "<group>"; };
 		F934E357282A92A10035B7A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,10 +108,13 @@
 		F934E354282A92A10035B7A6 /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				768C1DB82859374500CE3D8E /* Friends+CoreDataClass.swift */,
+				768C1DB92859374500CE3D8E /* Friends+CoreDataProperties.swift */,
 				767CDEF8285509E700FA0CA1 /* Movie+CoreDataClass.swift */,
 				767CDEF9285509E700FA0CA1 /* Movie+CoreDataProperties.swift */,
 				F934E355282A92A10035B7A6 /* CoreDataProjectApp.swift */,
 				F934E357282A92A10035B7A6 /* ContentView.swift */,
+				768C1DBC285939A600CE3D8E /* FilteredList.swift */,
 				F934E359282A92A20035B7A6 /* Assets.xcassets */,
 				F934E35B282A92A20035B7A6 /* Preview Content */,
 				F934E37F282A92C40035B7A6 /* DataController.swift */,
@@ -271,8 +280,11 @@
 			files = (
 				F934E358282A92A10035B7A6 /* ContentView.swift in Sources */,
 				F934E380282A92C40035B7A6 /* DataController.swift in Sources */,
+				768C1DBD285939A600CE3D8E /* FilteredList.swift in Sources */,
+				768C1DBB2859374500CE3D8E /* Friends+CoreDataProperties.swift in Sources */,
 				F934E383282A9FD20035B7A6 /* CoreDataProject.xcdatamodeld in Sources */,
 				767CDEFA285509E700FA0CA1 /* Movie+CoreDataClass.swift in Sources */,
+				768C1DBA2859374500CE3D8E /* Friends+CoreDataClass.swift in Sources */,
 				767CDEFB285509E700FA0CA1 /* Movie+CoreDataProperties.swift in Sources */,
 				F934E356282A92A10035B7A6 /* CoreDataProjectApp.swift in Sources */,
 			);
