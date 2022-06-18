@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            FilteredList(filterKey: "firstName", filterValue: firstNameFilter) { (friend: Friend) in
+            FilteredList(sortDescriptors: [SortDescriptor<Friend>(\.lastName, order: .reverse)], filterKey: "firstName", filterValue: firstNameFilter, pradicate: .beginsWith) { (friend: Friend) in
                 Text("\(friend.wrappedFirstName) \(friend.wrappedlastName)")
             }
             
