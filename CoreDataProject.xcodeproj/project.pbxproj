@@ -21,6 +21,11 @@
 		F934E373282A92A20035B7A6 /* CoreDataProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934E372282A92A20035B7A6 /* CoreDataProjectUITestsLaunchTests.swift */; };
 		F934E380282A92C40035B7A6 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934E37F282A92C40035B7A6 /* DataController.swift */; };
 		F934E383282A9FD20035B7A6 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F934E381282A9FD20035B7A6 /* CoreDataProject.xcdatamodeld */; };
+		F9C248E5285E23FD000ACEA3 /* OneToManyExampleContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C248E4285E23FD000ACEA3 /* OneToManyExampleContentView.swift */; };
+		F9C248EA285E3A48000ACEA3 /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C248E6285E3A48000ACEA3 /* Country+CoreDataClass.swift */; };
+		F9C248EB285E3A48000ACEA3 /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C248E7285E3A48000ACEA3 /* Country+CoreDataProperties.swift */; };
+		F9C248EC285E3A48000ACEA3 /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C248E8285E3A48000ACEA3 /* Candy+CoreDataClass.swift */; };
+		F9C248ED285E3A48000ACEA3 /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C248E9285E3A48000ACEA3 /* Candy+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,11 @@
 		F934E372282A92A20035B7A6 /* CoreDataProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F934E37F282A92C40035B7A6 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		F934E382282A9FD20035B7A6 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
+		F9C248E4285E23FD000ACEA3 /* OneToManyExampleContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneToManyExampleContentView.swift; sourceTree = "<group>"; };
+		F9C248E6285E3A48000ACEA3 /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		F9C248E7285E3A48000ACEA3 /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		F9C248E8285E3A48000ACEA3 /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		F9C248E9285E3A48000ACEA3 /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +118,10 @@
 		F934E354282A92A10035B7A6 /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				F9C248E6285E3A48000ACEA3 /* Country+CoreDataClass.swift */,
+				F9C248E7285E3A48000ACEA3 /* Country+CoreDataProperties.swift */,
+				F9C248E8285E3A48000ACEA3 /* Candy+CoreDataClass.swift */,
+				F9C248E9285E3A48000ACEA3 /* Candy+CoreDataProperties.swift */,
 				768C1DB82859374500CE3D8E /* Friends+CoreDataClass.swift */,
 				768C1DB92859374500CE3D8E /* Friends+CoreDataProperties.swift */,
 				767CDEF8285509E700FA0CA1 /* Movie+CoreDataClass.swift */,
@@ -119,6 +133,7 @@
 				F934E35B282A92A20035B7A6 /* Preview Content */,
 				F934E37F282A92C40035B7A6 /* DataController.swift */,
 				F934E381282A9FD20035B7A6 /* CoreDataProject.xcdatamodeld */,
+				F9C248E4285E23FD000ACEA3 /* OneToManyExampleContentView.swift */,
 			);
 			path = CoreDataProject;
 			sourceTree = "<group>";
@@ -282,9 +297,14 @@
 				F934E380282A92C40035B7A6 /* DataController.swift in Sources */,
 				768C1DBD285939A600CE3D8E /* FilteredList.swift in Sources */,
 				768C1DBB2859374500CE3D8E /* Friends+CoreDataProperties.swift in Sources */,
+				F9C248EA285E3A48000ACEA3 /* Country+CoreDataClass.swift in Sources */,
+				F9C248E5285E23FD000ACEA3 /* OneToManyExampleContentView.swift in Sources */,
 				F934E383282A9FD20035B7A6 /* CoreDataProject.xcdatamodeld in Sources */,
+				F9C248EC285E3A48000ACEA3 /* Candy+CoreDataClass.swift in Sources */,
 				767CDEFA285509E700FA0CA1 /* Movie+CoreDataClass.swift in Sources */,
+				F9C248EB285E3A48000ACEA3 /* Country+CoreDataProperties.swift in Sources */,
 				768C1DBA2859374500CE3D8E /* Friends+CoreDataClass.swift in Sources */,
+				F9C248ED285E3A48000ACEA3 /* Candy+CoreDataProperties.swift in Sources */,
 				767CDEFB285509E700FA0CA1 /* Movie+CoreDataProperties.swift in Sources */,
 				F934E356282A92A10035B7A6 /* CoreDataProjectApp.swift in Sources */,
 			);

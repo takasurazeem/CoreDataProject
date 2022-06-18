@@ -14,7 +14,7 @@ struct CoreDataProjectApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OneToManyExampleContentView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
